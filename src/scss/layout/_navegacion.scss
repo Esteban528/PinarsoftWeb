@@ -1,0 +1,77 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+header{
+    background-color: v.$primario;
+    margin-bottom: 4rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_logo {
+        display: flex;
+        img{
+            max-width: 5rem;
+            background-color: v.$blanco;
+            border-radius: 50%;
+            border-color: v.$negro;
+            border-style: outset;
+            border-color: v.$negro;
+            margin: 1rem;
+        } 
+    
+        p {
+            color: v.$blanco;
+            text-transform: uppercase;
+    
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    
+
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        a{
+            background: none;
+            border-radius: 0;
+        }
+        
+    } 
+    
+}
+
+.navegacion_contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+    a {
+        color: v.$blanco;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        background-color: v.$secundario;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-top: .3rem;
+        
+        &:hover {
+            color: v.$cafe;
+        }
+    }
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        a{
+            background: none;
+            border-radius: 0;
+        }
+    } 
+}
