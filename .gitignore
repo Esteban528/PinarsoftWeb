@@ -2,9 +2,5 @@
 *.css.map
 *.sass.map
 *.scss.map
-<<<<<<< HEAD
 node_modules/
 build/
-=======
-node-modules
->>>>>>> 67bfd77514a4b2bb6a225068e522fef17f513348
