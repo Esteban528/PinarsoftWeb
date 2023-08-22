@@ -18,7 +18,8 @@ html {
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
-    
+    margin: 0;
+
     &.fijar-body{
         overflow: hidden;
     }
@@ -45,6 +46,7 @@ a {
 
 h1,h2,h3 {
     margin: 0 0 5rem 0;
+    text-transform: uppercase;
 }
 
 h1 {
@@ -62,4 +64,8 @@ img {
     width: 100%;
     height: auto;
     display: block;
+
+    &.contenido-image {
+        max-width: 50%;
+    }
 }

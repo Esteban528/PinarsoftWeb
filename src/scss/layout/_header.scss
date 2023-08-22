@@ -2,8 +2,11 @@
 @use 'base/mixins' as m;
 
 header{
-    background-color: v.$primario;
+    margin: 0;
+    //background-color: v.$primario;
     margin-bottom: 4rem;
+    background: rgb(1,101,0);
+    background: linear-gradient(90deg, rgba(1,101,0,1) 0%, rgba(0,120,71,1) 35%, rgba(0,50,0,1) 100%);
 }
 
 .navegacion {
@@ -24,7 +27,9 @@ header{
             margin: 1rem;
         } 
     
-        p {
+        .navegacion_title {
+            font-size: 3rem;
+            margin-top: 2rem;
             color: v.$blanco;
             text-transform: uppercase;
     
@@ -34,7 +39,6 @@ header{
         }
     }
     
-
     @include m.tablet{
         flex-direction: row;
         justify-content: space-between;
@@ -42,9 +46,7 @@ header{
             background: none;
             border-radius: 0;
         }
-        
     } 
-    
 }
 
 .navegacion_contenedor {
