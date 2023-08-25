@@ -1,0 +1,17 @@
+{
+    "integrants": [
+        {
+            "name" : "Esteban González",
+            "github" : "https://github.com/Esteban528/",
+            "image" : "https://avatars.githubusercontent.com/u/102267595?v=4",
+            "rol" : "fundador"
+        },
+        {
+            "name" : "Marlon Florez",
+            "github" : "https://github.com/jmarlonDev",
+            "image" : "https://avatars.githubusercontent.com/u/139396421?v=4",
+            "rol" : "co-fundador"
+        }
+
+    ]
+}

@@ -2,6 +2,7 @@
 @use 'base/mixins' as m;
 
 footer{
+    margin-top: 5rem;
 
     &.footer {
         background: rgb(1,101,0);
@@ -32,7 +33,10 @@ footer{
         
         p {
             color: v.$blanco;
+            font-size: 2.5rem;
         }
+
+       
     }
 
     .contacto_logo {
@@ -40,5 +44,10 @@ footer{
         background-color: v.$blanco;
         border-radius: 10%;
         padding: .1rem;
+        max-width: 2.5rem;
+
+        &.email_logo {
+            width: 4rem;
+        }
     }
 }
