@@ -48,7 +48,6 @@ async function addToDocument (json) {
 async function getJson(url) {
     const result = await fetch(url);
     const json = await result.json();
-    if (json) alert("Good");
     return json;
 }
 
