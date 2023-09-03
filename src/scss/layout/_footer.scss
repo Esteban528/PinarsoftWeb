@@ -5,8 +5,8 @@ footer{
     margin-top: 5rem;
 
     &.footer {
-        background: rgb(1,101,0);
-        background: linear-gradient(90deg, rgba(1,101,0,1) 0%,rgba(0,120,71,1) 35%, rgba(0,50,0,1) 100%);
+        // background: rgb(1,101,0);
+        //background: linear-gradient(90deg, rgba(1,101,0,1) 0%,rgba(0,120,71,1) 35%, rgba(0,50,0,1) 100%);
         padding: 5rem;
     }
 
@@ -27,27 +27,20 @@ footer{
     }
 
     .contacto_section {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        
+        display: grid;
+        align-content: center;
+        @include m.grid(2, .5rem);
+        grid-template-columns: 2rem 10rem;
         p {
             color: v.$blanco;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
         }
 
-       
-    }
-
-    .contacto_logo {
-        align-self: center;
-        background-color: v.$blanco;
-        border-radius: 10%;
-        padding: .1rem;
-        max-width: 2.5rem;
-
-        &.email_logo {
-            width: 4rem;
+        .contacto-icon {
+            margin-top: .5rem;
+            width: max-content;
         }
     }
+
+
 }

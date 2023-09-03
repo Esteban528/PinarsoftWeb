@@ -21,26 +21,39 @@ async function loadIntegrants() {
 }
 
 async function addToDocument (json) {
-    const profile = document.createElement("section");
+    const profile = document.createElement("div");
 
-    profile.innerHTML = ` 
-        <section class="profile">
-            <h3 class="profile_text profile_rol">${json.rol}</h3>
+    // profile.innerHTML = ` 
+    //     <section class="profile">
+    //         <h3 class="profile_text profile_rol">${json.rol}</h3>
 
-            <div class = "profile_personal">
-                <img class="profile_icon profile_logo" src="${json.image}" alt="profile image">
+    //         <div class = "profile_personal">
+    //             <img class="profile_icon profile_logo" src="${json.image}" alt="profile image">
                 
-                <h3 class="profile_text profile_name">${json.name}</h3>
-            </div>
+    //             <h3 class="profile_text profile_name">${json.name}</h3>
+    //         </div>
 
-            <div class="profile_social">
-                <a href="${json.github}" class="profile_github" target="-blank"> 
-                    <img class="profile_icon profile_github_img" src="svg/github-mark.svg" alt="">   
-                </a>
+    //         <div class="profile_social">
+    //             <a href="${json.github}" class="profile_github" target="-blank"> 
+    //                 <img class="profile_icon profile_github_img" src="svg/github-mark.svg" alt="">   
+    //             </a>
+    //         </div>
+    //     </section> <!---.profile-->
+    // `; 
+    //width: 18rem; margin-bottom: 1rem;
+    profile.innerHTML = ` 
+            <div class="col" >
+            <img src="${json.image}" class="card-img-top" alt="profile">
+            <div class="card-body">
+            <h5 class="card-title">${json.rol}</h5>
+            <p class="card-text">${json.name}</p>
+            <a href="${json.github}" class="btn btn-primary">Go Github</a>
             </div>
-        </section> <!---.profile-->
     `; 
-
+    profile.classList.add("card");
+    // profile.classList.add("h-100");
+    
+    
     const integrantList = document.querySelector("#integrantList");
     integrantList.appendChild(profile)
 }

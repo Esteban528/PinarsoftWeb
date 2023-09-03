@@ -3,9 +3,13 @@
 // 1 rem = 10px
 
 @use 'variables' as v;
+@use 'mixins' as m;
 
 html {
-    font-size: 62.5%;
+    // *:not(nav){
+    //     font-size: 62.5%; 
+    // }
+    //
     box-sizing: border-box;
 }
 
@@ -16,9 +20,11 @@ html {
 }
 
 body {
+    
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
     margin: 0;
+    
 
     &.fijar-body{
         overflow: hidden;
@@ -30,7 +36,7 @@ body {
 
 p {
     font-size: 2rem;
-    color: v.$negro;
+    // color: v.$negro;
     line-height: 1.5;
 }
 
@@ -44,9 +50,10 @@ a {
     text-decoration: none;
 }
 
-h1,h2,h3 {
+h1,h2,h3, h4, h5 {
     margin: 0 0 5rem 0;
     text-transform: uppercase;
+    color: v.$blanco;
 }
 
 h1 {
@@ -69,4 +76,19 @@ img {
     &.contenido-image {
         max-width: 50%;
     }
+}
+
+.nav-link {
+    &:hover{
+        @include m.desktopXL{
+            background-color: v.$primarioTranspa;
+            border-radius: 1.5rem;
+        }
+    }
+}
+
+.brand-logo{
+    width: 3rem;
+    border-radius: 50%;
+    // border-style: solid;
 }
