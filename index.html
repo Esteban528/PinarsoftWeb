@@ -2,94 +2,129 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PinarSoft</title>
-    <link rel="shortcut icon" href="build/img/PinarSoft-circle-mini.png" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PinarSoft</title>
+  <link rel="shortcut icon" href="build/img/PinarSoft-circle-mini.png" />
 
-    <link rel="stylesheet" href="build/css/app.css">
+  <link rel="stylesheet" href="build/css/style.css">
 
-    <!-- Fonts https://fonts.google.com/specimen/Public+Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;700&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
+  <!-- Fonts https://fonts.google.com/specimen/Public+Sans-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navegacion">
-            <div class="navegacion_logo">
-                <picture>
-                    <source srcset="build/img/PinarSoft.avif" type="image/avif">
-                    <source srcset="build/img/PinarSoft.webp" type="image/webp">
-                    <img class="navegaccion-logo" width="200" height="300" loading="lazy" src="build/img/PinarSoft.png"
-                        alt="Imagen Vocalista">
-                </picture>
+  <header class="mb-10  flex flex-row p-2 justify-around lg:justify-between shadow-xl bg-black">
+    <div class="bg-gradient-to-r from-indigo-400  to-green-300 rounded-xl p-2 border-2 border-gray-700">
+      <img class="w-12" src="build/img/PinarSoft.png" alt="PinarSoft Logo">
+    </div>
 
-                <a class="navegacion_title"><span>Pinar</span>Soft</a>
-            </div>
+    <nav class="flex flex-row justify-center gap-4 text-white opacity-100 blur-none z-10">
+      <a class="active" href="#">
 
-            <div class="navegacion_contenedor">
-                <a href="index.html">inicio</a>
-                <a href="integrants.html">Equipo</a>
-                <!-- <a href="detalles">detalles</a>
-                <a href="acerca de ">acerca de</a>
-                <a href="#contactos">contactos</a>
-                <a href="opiniones">opiniones</a> -->
-            </div>
+        <p class="mt-2 flex">
+          <i class="bi bi-house-door-fill"></i>
+          <span class="hidden lg:block">
+            Inicio
+          </span>
+        </p>
+      </a>
 
+    </nav>
 
-        </nav>
-    </header>
+    <div class="hidden lg:block w-72 text-gray-300 ">
+      <p>La perseverancia y el esfuerzo son el combustible de los sueños.</p>
+    </div>
+  </header>
 
-    <main>
-        <section class="principal contenedor" id="inicio">
-        <h1>PinarSoft tecnología y desarrollo</h1>
-        <div class="principal-contenido">
-            <picture>
-                <source srcset="build/img/PinarSoft.avif" type="image/avif">
-                <source srcset="build/img/PinarSoft.webp" type="image/webp">
-                <img class="contenido-image" width="200" height="300" loading="lazy" src="build/img/PinarSoft.png"
-                    alt="Imagen Vocalista">
-            </picture>
-            <div class="contenido">
-                <h2>Emblema</h2>
-                <p>Nuestra calidad hace referencia a los pinos, pues estos proveen seguridad y firmeza ante cualquier
-                    situación, de manera que priorizamos la seguridad y la estabilidad antes de cualquier otro concepto.
-                </p>
-            </div>
-
+  <main class="m-24">
+    <section class="p-10 rounded-xl shadow-xl bg-gray-300 bg-opacity-55">
+      <h1>PinarSoft tecnología y desarrollo</h1>
+      <div class="flex flex-row">
+        <picture>
+          <source srcset="build/img/PinarSoft.avif" type="image/avif">
+          <source srcset="build/img/PinarSoft.webp" type="image/webp">
+          <img class="w-24" loading="lazy" src="build/img/PinarSoft.png" alt="logo">
+        </picture>
+        <div>
+          <h2>¿PinarSoft?</h2>
+          <p>Nuestra calidad hace referencia a los pinos, pues estos proveen seguridad y firmeza ante cualquier
+            situación, de manera que priorizamos la seguridad y la estabilidad antes de cualquier otro concepto.
+          </p>
         </div>
+      </div>
+
+
+      <h3>¿Qué somos?</h3>
+
+      <p>
+        PinarSoft es una firma de software bajo un equipo de desarrollo centralizado en el desarrollo web.
+        <br>
+        Actualmente trabajamos en el desarrollo completo de ecosistemas web y la seguridad, con el fin de brindar la
+        mejor experiencia a nuestros usuarios.
+      </p>
+
+      <h4 class="mt-4">¿Estamos disponibles?</h4>
+      <p>
+        El equipo aún no está listo para aceptar nuevos proyectos, sin embargo estamos entrenando un nuevo equipo que
+        pronto lo será.
+      </p>
+
     </section>
-    </main>
-    
-    <footer class="footer">
-        
-        <div class="footer_info">
-            
-            <div class="contacto">
-                <h3>Contacto</h3>
-                <div class="contacto_section">
-                    <img class="contacto_logo email_logo" src="svg/email.svg" alt="" srcset="">
-        
-                    <p>pinarsoftenterprise@gmail.com</p>
-                </div>
-                <div class="contacto_section">
-                    <img class="contacto_logo" src="svg/phone.svg" alt="" srcset="">
-                    <p>314 656 2575</p>
-                </div>
-            </div>
 
+
+    <section class="mt-8 p-10 rounded-xl shadow-xl bg-gray-300 bg-opacity-55">
+      <h1>Proyectos</h1>
+      <div class="lg:grid-cols-3">
+        <div
+          class="bg-black bg-opacity-75 text-white lg:w-80 p-4 flex justify-center border-2 border-black shadow-xl rounded-xl">
+          <div class="p-1 flex flex-col items-center justify-center align-top">
+            <h3>PHP Pinar MVC</h3>
+            <img class="w-44" src="./build/img/phppinarMVC.png">
+            <p>
+              Un framework simple para desarollo PHP con arquitectura modelo vista controlador; incluyendo asi patrones
+              de arquitectura y escalabilidad.
+              Es idea para hacer proyectos livianos con backend robusto sin depender de proyectos grandes como Laravel o
+              Simphony.
+            </p>
+
+            <a href="https://github.com/Esteban528/PinarMVC"
+               target="_blank"
+              class="bg-sky-300 p-2 text-black hover:text-white shadow-xl border-2 border-black rounded-xl hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Ver
+              repositorio</a>
+          </div>
         </div>
-      
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <!-- <script src="build/js/filename.js"></script> -->
+  <footer class="p-14 text-white flex flex-row justify-between bg-gray-300 bg-opacity-30">
+
+    <div class="text-xl mt-8">
+      <h3>Contacto</h3>
+      <p> <i class="bi bi-envelope-fill"></i> pinarsoftenterprise@gmail.com</p>
+      <p> <i class="bi bi-whatsapp"></i> 314 656 2575</p>
+      <p> <i class="bi bi-geo-alt-fill"></i> Cali Valle Del Cauca - Colombia </p>
+    </div>
+
+    <div class="flex flex-col justify-end">
+      <p><span class="text-black font-black">Powered by </span>Esteban Gonzalez</p>
+    </div>
+
+    <div class="text-xl mt-8 text-black flex flex-col">
+      <h3>PinarSoft Team</h3>
+      <a class="p-2 contact transition-all ease-in-out hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+        href="https://www.linkedin.com/in/esteban-gonzalez-76393b26a"><i class="bi bi-linkedin"></i> Esteban
+        Gonzalez</a>
+      <a class="contact transition-all ease-in-out hover:bg-gradient-to-r from-gray-400 via-purple-500 to-orange-600"
+        href="https://github.com/Esteban528"><i class="p-2 bi bi-github"></i> Esteban Gonzalez</a>
+    </div>
+
+  </footer>
+
+  <!-- <script src="build/js/filename.js"></script> -->
 </body>
 
 </html>

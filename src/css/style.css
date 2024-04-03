@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a > p{
+  @apply uppercase font-bold p-1;
+  @apply transition ease-in-out delay-150 hover:text-gray-800;
+  @apply transition-all ease-linear border-b-black rounded hover:border-b-4 hover:shadow-black;
+}
+
+
+.active > p {
+  @apply text-white hover:text-white;
+
+  @apply rounded border-b-white border-b-4 ;
+}
+
+.active .btn{
+  @apply bg-gray-200; 
+}
+
+
+.btn
+{
+  @apply p-1.5 shadow-xl;
+  @apply uppercase font-sans font-bold; 
+
+  @apply hover:shadow-xl;
+}
+
+h1,h2,h3,h4{
+  @apply font-black uppercase my-4;
+}
+
+h1 {@apply text-4xl text-center}
+h2 {@apply text-3xl}
+h3 {@apply text-2xl}
+h4 {@apply text-xl my-2}
+
+body {
+  @apply bg-gradient-to-r from-blue-900 via-purple-900 to-green-700;
+}
+
+.contact:hover {
+  @apply rounded-xl border-2 border-black p-2 shadow-lg;
+}
