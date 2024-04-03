@@ -22,10 +22,10 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.4.21",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "tailwindcss": "^3.4.3"
   },
   "dependencies": {
-    "bootstrap": "^5.3.1",
     "gulp-terser-js": "^5.2.2"
   }
 }
