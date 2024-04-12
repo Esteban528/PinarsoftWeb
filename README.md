@@ -1,4 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a138ff4b-29e8-4349-91b2-7bab2f01f8f4/deploy-status)](https://app.netlify.com/sites/pinarsoft/deploys)
 
+<br>
 # GULP & SASS pre-configurado
 
 Saludos! Seguramente nos ha pasado que proyecto tras proyecto tenemos que empezar desde 0 y volver a instalar todo denuevo. Si usas **Gulp** para automatizar tareas y **SASS** para tener un codigo de frontend mucho mas legible. Pues te invito a probar mi pantilla para desarrollo frontend web, el cual consta con herramientas muy interesantes que podrían facilitar la escritura y manejo del proyecto. 
